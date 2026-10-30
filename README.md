@@ -48,61 +48,6 @@ Numele ambelor articole apar în legenda de deasupra fiecărui grafic comparativ
 
 Pentru un singur articol, lasă al doilea link gol; analiza textului 2 și comparația nu sunt afișate. Pentru publicarea modificării, încarcă noul `index.html` în repository și salvează un commit.
 
-- **Repository (depozit):** locul de pe GitHub în care păstrezi fișierele proiectului și istoricul lor.
-- **Commit:** o versiune salvată a proiectului, însoțită de un mesaj despre modificare.
-- **Branch (ramură):** o linie de lucru; în acest exercițiu folosim ramura `main`.
-- **GitHub Pages:** serviciul care publică fișierele site-ului din repository la o adresă web.
-
-Nu este necesar să înveți HTML sau să instalezi Git pentru pașii de mai jos.
-
-## 1. Încearcă pagina pe calculator
-
-Deschide `index.html` în Chrome, Edge sau Firefox. Lipește un link de articol Wikipedia și apasă **Analizează articolul**. Exemplu:
-
-https://ro.wikipedia.org/wiki/Al_Doilea_R%C4%83zboi_Mondial
-
-Vei vedea totalul literelor, literele lipsă, procentele vocalelor și consoanelor, graficul probabilităților și tabelul complet. Poți descărca graficele SVG și textul extras sau folosi butonul de tipărire pentru a salva rezultatele ca PDF.
-
-## 2. Creează primul repository pe GitHub
-
-1. Intră în contul tău pe [github.com](https://github.com).
-2. Apasă **+ → New repository**.
-3. La nume, scrie de exemplu `analiza-litere`.
-4. Alege **Public** și activează **Add README**.
-5. Apasă **Create repository**.
-
-## 3. Încarcă pagina
-
-1. În repository, apasă **Add file → Upload files**.
-2. Din folderul local `html-version`, încarcă fișierul **index.html**. Încarcă fișierul în rădăcina repository-ului: trebuie să vezi `index.html` direct în lista principală, nu în interiorul unui folder `html-version`.
-3. La mesajul de commit, scrie `Adaugă prima versiune a paginii`.
-4. Apasă **Commit changes** și păstrează ramura `main`.
-
-Fișierul README creat de GitHub poate rămâne acolo. Pagina are nevoie doar de `index.html`.
-
-## 4. Activează GitHub Pages
-
-1. Deschide **Settings** din repository.
-2. În meniul din stânga, deschide **Pages**.
-3. La **Build and deployment → Source**, alege **Deploy from a branch**.
-4. Alege ramura **main** și folderul **/ (root)**.
-5. Apasă **Save**.
-6. Așteaptă finalizarea publicării. Poți urmări progresul în fila **Actions**.
-7. Revino la **Settings → Pages** și apasă **Visit site**.
-
-Adresa va avea forma `https://NUMELE-TAU.github.io/analiza-litere/`. Aceasta este adresa de prezentat profesorului. Adresa repository-ului (`github.com/...`) arată codul; adresa Pages (`...github.io/...`) deschide aplicația.
-
-Documentația GitHub menționează că publicarea poate dura până la 10 minute. Dacă apare 404, verifică faptul că fișierul se numește exact `index.html`, este în rădăcină, iar publicarea din `main` a reușit.
-
-## 5. Exersează o actualizare
-
-1. După o modificare locală, revino la **Add file → Upload files** și încarcă noul `index.html` în același loc.
-2. Scrie un mesaj de commit care descrie modificarea și confirmă salvarea.
-3. După publicare, reîncarcă site-ul cu **Ctrl + F5**.
-4. Deschide istoricul de **commits** pentru a vedea versiunile proiectului.
-
-## Dacă vrei să publici tot proiectul existent
-
 Instrucțiunile de mai sus folosesc un repository nou, cu `index.html` direct în rădăcină. Dacă încarci întregul proiect și păstrezi pagina în `html-version/index.html`, poți publica tot din `main` și `/ (root)`, apoi deschide `https://NUMELE-TAU.github.io/NUME-REPOSITORY/html-version/`. GitHub nu oferă selectarea directă a folderului `html-version` ca sursă de publicare din ramură; opțiunile sunt rădăcina sau `/docs`.
 
 ## Cum este extras textul
